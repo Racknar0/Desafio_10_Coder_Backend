@@ -51,7 +51,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', express.static(path.join(__dirname, 'public'))); //! aca se declaran los archivos estaticos
 app.use(expressSession({
     store: MongoStore.create({ 
-        mongoUrl: 'mongodb+srv://admin:camilo2676@cluster0.kjy2oj9.mongodb.net/sessions?retryWrites=true&w=majority' ,
+        mongoUrl: 'mongodb+srv://user:pass@cluster0.kjy2oj9.mongodb.net/sessions?retryWrites=true&w=majority' ,
         ttl: 60 //! 60 segundos
     }),
     secret: 'clave_super_secreta',
